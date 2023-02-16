@@ -1,7 +1,7 @@
 import lief
 from capstone import Cs, CS_ARCH_X86, CS_MODE_64
 
-FILE_NAME = "test/Project.elf"
+FILE_NAME = "binaries/Project.elf"
 AES_KEY_SIZE = 32
 
 
