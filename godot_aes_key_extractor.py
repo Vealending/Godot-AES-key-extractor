@@ -1,4 +1,4 @@
-import lief
+from lief import parse
 from capstone import Cs, CS_ARCH_X86, CS_MODE_64
 
 FILE_NAME = "binaries/Project.elf"
