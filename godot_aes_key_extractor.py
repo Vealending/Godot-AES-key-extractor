@@ -15,7 +15,8 @@ def is_valid_lea_instruction(inst):
 def is_address_within_section_bounds(address, section):
     """Check if the given address is within the bounds of the given section."""
 
-    return address >= section.virtual_address and address < section.virtual_address + section.size
+    return (address >= section.virtual_address and 
+            address < section.virtual_address + section.size)
 
 
 def main():
