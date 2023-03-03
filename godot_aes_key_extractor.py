@@ -29,7 +29,7 @@ def main():
     Although an AES key can include null bytes, filtering them reduces the false positive rate.
     """
 
-    binary = lief.parse(FILE_NAME)
+    binary = parse(FILE_NAME)
 
     text_section = binary.get_section(".text")
     data_section = binary.get_section(".data")
